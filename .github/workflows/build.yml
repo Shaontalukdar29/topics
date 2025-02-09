@@ -1,13 +1,13 @@
 name: Build
 on:
-  push:
+  Push:
     branches: [main]
     paths: ["**.bs"]
-jobs:
-  build:
+Jobs:
+  Build:
     name: Build
     runs-on: ubuntu-latest
-    steps:
+    Steps:
       - uses: actions/checkout@v3
       - uses: w3c/spec-prod@v2
         with:
